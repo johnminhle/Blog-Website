@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Josefin+Sans:wght@100;700&family=League+Gothic&family=Macondo&family=Odibee+Sans&family=Smooch+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Heebo:wght@300&family=Josefin+Sans:wght@100;700&family=League+Gothic&family=Macondo&family=Odibee+Sans&family=Roboto+Flex:opsz@8..144&family=Smooch+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Grape+Nuts&family=Heebo:wght@300&family=Josefin+Sans:wght@100;700&family=League+Gothic&family=Macondo&family=Odibee+Sans&family=Roboto+Flex:opsz@8..144&family=Smooch+Sans:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.removeline{
+    text-decoration: none;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-areas:
+    "header"
+    "article"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+article{
+    grid-area: article;
+}
+
+#gojo{
+    width: 100%;
+}
+
+
+section{
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "topLeft topRight"
+    "botLeft botRight";
+}
+
+#yuta{
+    grid-area: topLeft;
+}
+
+#yuji{
+    grid-area: topRight;
+}
+
+#maki{
+    grid-area: botLeft;
+}
+
+#toge{
+    grid-area: botRight;
+}
+
+#yutacap{
+    background-color: antiquewhite;
+    color: black;
+    font: 25px 'Roboto Flex', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#yutacap:hover {opacity: 1}
+
+#yujicap{
+    background-color: red;
+    color: white;
+    font: 25px 'Roboto Flex', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#yujicap:hover {opacity: 1}
+
+#makicap{
+    background-color: green;
+    color: black;
+    font: 25px 'Roboto Flex', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#makicap:hover {opacity: 1}
+
+#togecap{
+    background-color: blue;
+    color: white;
+    font: 25px 'Roboto Flex', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#togecap:hover {opacity: 1}
+
+#showmore{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 25px;
+    font: 24px 'Barlow Condensed', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px gray;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: darkgreen;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    grid-area: footer;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.social{
+    padding: 10px;
+}
+
+.font{
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 10px;
+}
+
+p{
+    font-size: 40px;
+}
+
+blockquote{
+    font-size: 30px;
+}
